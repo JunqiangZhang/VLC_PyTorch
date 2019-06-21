@@ -58,7 +58,7 @@ def save():
         if (epoch + 1) % 500 == 0:
             print('Epoch [%d/%d], Loss: %.4f'
                   % (epoch + 1, num_epochs, loss.item()))
-    torch.save(net1.state_dict(), 'net_params4.pkl')
+    torch.save(net1.state_dict(), 'net_params.pkl')
     print('The model has been successfully generated!')
 
 def restore_params(a, b, c):
